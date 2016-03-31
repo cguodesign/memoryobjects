@@ -1,0 +1,3 @@
+rootProject.name = 'MemoryOjbects16'
+
+include ':app'
