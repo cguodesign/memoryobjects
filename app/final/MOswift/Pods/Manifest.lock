@@ -1,0 +1,98 @@
+PODS:
+  - ALCameraViewController (1.1.9)
+  - Bluetonium (1.0.1)
+  - Cordova (4.0.1)
+  - cordova-plugin-camera (2.1.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-contacts (2.0.1):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-device (1.1.1):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-device-motion (1.2.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-device-orientation (1.0.2):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-file (4.1.1):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-file-transfer (1.5.0):
+    - Cordova (>= 4.0.1)
+    - cordova-plugin-file
+  - cordova-plugin-geolocation (2.1.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-globalization (1.0.2):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-inappbrowser (1.3.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-media-capture (1.2.0):
+    - Cordova (>= 4.0.1)
+    - cordova-plugin-file
+  - cordova-plugin-network-information (1.2.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-splashscreen (2.1.0):
+    - Cordova (>= 3.0.0)
+  - cordova-plugin-statusbar (2.1.1):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-vibration (2.1.0):
+    - Cordova (>= 4.0.1)
+  - cordova-plugin-wkwebview-engine (1.0.2):
+    - Cordova (>= 4.0.1)
+  - CordovaPlugin-console (0.2.10):
+    - Cordova (>= 3.0.0)
+  - Firebase (2.5.1)
+  - Hakuba (2.0.2)
+  - PagingMenuController (0.8.0)
+  - phonegap-ios-template (0.2.0)
+
+DEPENDENCIES:
+  - ALCameraViewController
+  - Bluetonium
+  - Cordova
+  - cordova-plugin-camera
+  - cordova-plugin-contacts
+  - cordova-plugin-device
+  - cordova-plugin-device-motion
+  - cordova-plugin-device-orientation
+  - cordova-plugin-file
+  - cordova-plugin-file-transfer
+  - cordova-plugin-geolocation
+  - cordova-plugin-globalization
+  - cordova-plugin-inappbrowser
+  - cordova-plugin-media-capture
+  - cordova-plugin-network-information
+  - cordova-plugin-splashscreen
+  - cordova-plugin-statusbar
+  - cordova-plugin-vibration
+  - cordova-plugin-wkwebview-engine
+  - CordovaPlugin-console
+  - Firebase (>= 2.5.1)
+  - Hakuba
+  - PagingMenuController
+  - phonegap-ios-template
+
+SPEC CHECKSUMS:
+  ALCameraViewController: f171ffb7e84d211277a0f97823a2bda7418dc573
+  Bluetonium: 3459a4509d777a824880c0f2521832cabe8cb9ea
+  Cordova: a83108a483fe01d06ecabb9d83bdbf773cb8b22c
+  cordova-plugin-camera: 714413dfb2e148aed9caddc6af69192cd681a133
+  cordova-plugin-contacts: f65425db0e2c97868d6c881e7bc1866979a28fa7
+  cordova-plugin-device: 3412e6b48e329996ba17c845cdd25cb9ac0af7e2
+  cordova-plugin-device-motion: 30503b3ba3092dbccdca9dc34f9d4ec851bf3e80
+  cordova-plugin-device-orientation: 687a72efac2398955ed256d856dc822850a69edb
+  cordova-plugin-file: 31e1ab607c12f141592e040885bb383513683227
+  cordova-plugin-file-transfer: ee44feb05015709c5145ce5499e7b5589e82bfea
+  cordova-plugin-geolocation: 05450762ef68612bf857b61c36877b21c1266420
+  cordova-plugin-globalization: bd6ba379dfef19c46d905fa2fe75be64e247e1a2
+  cordova-plugin-inappbrowser: 98bd919e234e6a568249c4a0db6c7800c4a79bab
+  cordova-plugin-media-capture: 92435df41188566a95710916dd8f5a2e747e692e
+  cordova-plugin-network-information: eb6d5b97e395f9c0199cae2128319c054753f3ea
+  cordova-plugin-splashscreen: 8783df8974b6026e70fdcd5ca04b495d6e35abaa
+  cordova-plugin-statusbar: 781c5a2b1625f167183b0505fa57c4ba4b2f5b18
+  cordova-plugin-vibration: 7cee54bf67a0eba0ed6c022634bc36c7f7388611
+  cordova-plugin-wkwebview-engine: d07b627d9d0cfcc4276671cddb3bb7b6a842e67c
+  CordovaPlugin-console: aeb6015a9830edaaf8158a6b49f18189ebf38aa5
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  Hakuba: 844b97098e4a51c6e53a6dabf4cf27f248ad4cd9
+  PagingMenuController: 1a9ff8ad0ab9704f215706997c1a624bc951f508
+  phonegap-ios-template: 4fb2cba38c3272d01e3181d77af6218f70da7855
+
+COCOAPODS: 0.39.0
