@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9500C0ED1CADFDBC002C1BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C0EC1CADFDBC002C1BB7 /* AppDelegate.swift */; };
+		9500C0EF1CADFDBC002C1BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C0EE1CADFDBC002C1BB7 /* ViewController.swift */; };
+		9500C0F21CADFDBC002C1BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9500C0F01CADFDBC002C1BB7 /* Main.storyboard */; };
+		9500C0F51CADFDBD002C1BB7 /* MOswift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9500C0F31CADFDBD002C1BB7 /* MOswift.xcdatamodeld */; };
+		9500C0F71CADFDBD002C1BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9500C0F61CADFDBD002C1BB7 /* Assets.xcassets */; };
+		9500C0FA1CADFDBD002C1BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9500C0F81CADFDBD002C1BB7 /* LaunchScreen.storyboard */; };
+		9500C1051CADFDBD002C1BB7 /* MOswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C1041CADFDBD002C1BB7 /* MOswiftTests.swift */; };
+		9500C1101CADFDBD002C1BB7 /* MOswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C10F1CADFDBD002C1BB7 /* MOswiftUITests.swift */; };
+		9500C11F1CADFF76002C1BB7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C11E1CADFF76002C1BB7 /* FBSDKCoreKit.framework */; };
+		9500C1221CAE0215002C1BB7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C1211CAE0215002C1BB7 /* FBSDKLoginKit.framework */; };
+		9500C1241CAE0AB3002C1BB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C1231CAE0AB3002C1BB7 /* MainViewController.swift */; };
+		9500C1261CAE125E002C1BB7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C1251CAE125E002C1BB7 /* Bolts.framework */; };
+		9500C1291CAE1271002C1BB7 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C1271CAE1271002C1BB7 /* FBSDKMessengerShareKit.framework */; };
+		9500C12A1CAE1271002C1BB7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C1281CAE1271002C1BB7 /* FBSDKShareKit.framework */; };
+		9500C12C1CAE4C42002C1BB7 /* BLEDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500C12B1CAE4C42002C1BB7 /* BLEDiscoverView.swift */; };
+		9500C1301CAE4EDA002C1BB7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500C12F1CAE4EDA002C1BB7 /* CoreBluetooth.framework */; };
+		95165F2B1CAE7878001F3B27 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95165F2A1CAE7878001F3B27 /* Firebase.framework */; };
+		95209B001CAEE9500088F6CC /* DetailedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95209AFE1CAEE9500088F6CC /* DetailedListViewController.swift */; };
+		953220B51CCF7ADB0053E886 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952F4B841CB44E2D001C2D0C /* Cordova.framework */; };
+		953220CA1CCF7ADB0053E886 /* cordova_plugin_camera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220B61CCF7ADB0053E886 /* cordova_plugin_camera.framework */; };
+		953220CB1CCF7ADB0053E886 /* cordova_plugin_contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220B71CCF7ADB0053E886 /* cordova_plugin_contacts.framework */; };
+		953220CC1CCF7ADB0053E886 /* cordova_plugin_device_motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220B81CCF7ADB0053E886 /* cordova_plugin_device_motion.framework */; };
+		953220CD1CCF7ADB0053E886 /* cordova_plugin_device_orientation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220B91CCF7ADB0053E886 /* cordova_plugin_device_orientation.framework */; };
+		953220CE1CCF7ADB0053E886 /* cordova_plugin_device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BA1CCF7ADB0053E886 /* cordova_plugin_device.framework */; };
+		953220CF1CCF7ADB0053E886 /* cordova_plugin_file_transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BB1CCF7ADB0053E886 /* cordova_plugin_file_transfer.framework */; };
+		953220D01CCF7ADB0053E886 /* cordova_plugin_file.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BC1CCF7ADB0053E886 /* cordova_plugin_file.framework */; };
+		953220D11CCF7ADB0053E886 /* cordova_plugin_geolocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BD1CCF7ADB0053E886 /* cordova_plugin_geolocation.framework */; };
+		953220D21CCF7ADB0053E886 /* cordova_plugin_globalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BE1CCF7ADB0053E886 /* cordova_plugin_globalization.framework */; };
+		953220D31CCF7ADB0053E886 /* cordova_plugin_inappbrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220BF1CCF7ADB0053E886 /* cordova_plugin_inappbrowser.framework */; };
+		953220D41CCF7ADB0053E886 /* cordova_plugin_media_capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C01CCF7ADB0053E886 /* cordova_plugin_media_capture.framework */; };
+		953220D51CCF7ADB0053E886 /* cordova_plugin_network_information.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C11CCF7ADB0053E886 /* cordova_plugin_network_information.framework */; };
+		953220D61CCF7ADB0053E886 /* cordova_plugin_splashscreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C21CCF7ADB0053E886 /* cordova_plugin_splashscreen.framework */; };
+		953220D71CCF7ADB0053E886 /* cordova_plugin_statusbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C31CCF7ADB0053E886 /* cordova_plugin_statusbar.framework */; };
+		953220D81CCF7ADB0053E886 /* cordova_plugin_vibration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C41CCF7ADB0053E886 /* cordova_plugin_vibration.framework */; };
+		953220D91CCF7ADB0053E886 /* cordova_plugin_wkwebview_engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C51CCF7ADB0053E886 /* cordova_plugin_wkwebview_engine.framework */; };
+		953220DA1CCF7ADB0053E886 /* CordovaPlugin_console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C61CCF7ADB0053E886 /* CordovaPlugin_console.framework */; };
+		953220DB1CCF7ADB0053E886 /* Pods_MOswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C71CCF7ADB0053E886 /* Pods_MOswift.framework */; };
+		953220DC1CCF7ADB0053E886 /* Pods_MOswiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C81CCF7ADB0053E886 /* Pods_MOswiftTests.framework */; };
+		953220DD1CCF7ADB0053E886 /* Pods_MOswiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953220C91CCF7ADB0053E886 /* Pods_MOswiftUITests.framework */; };
+		9551C52D1CBD44CA009EB84A /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551C52C1CBD44CA009EB84A /* TextInputViewController.swift */; };
+		9551C52F1CBD44DD009EB84A /* ImageInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551C52E1CBD44DD009EB84A /* ImageInputViewController.swift */; };
+		9551C5311CBD44EB009EB84A /* VoiceInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551C5301CBD44EB009EB84A /* VoiceInputViewController.swift */; };
+		9551C5331CBD465F009EB84A /* CameraInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551C5321CBD465F009EB84A /* CameraInputViewController.swift */; };
+		9551C5351CBD4809009EB84A /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551C5341CBD4809009EB84A /* AddEntryViewController.swift */; };
+		955CCD141CAED5CC00FD2950 /* HisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CCD131CAED5CC00FD2950 /* HisViewController.swift */; };
+		955CCD161CAED5F200FD2950 /* Hakuba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CCD151CAED5F200FD2950 /* Hakuba.framework */; };
+		955CCD1A1CAED6A600FD2950 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CCD171CAED6A600FD2950 /* CustomCell.swift */; };
+		955CCD1B1CAED6A600FD2950 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955CCD181CAED6A600FD2950 /* CustomCell.xib */; };
+		955CCD1C1CAED6A600FD2950 /* CustomCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CCD191CAED6A600FD2950 /* CustomCellModel.swift */; };
+		955CCD1E1CAED7F100FD2950 /* ListHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CCD1D1CAED7F100FD2950 /* ListHeaderViewController.swift */; };
+		955CCD201CAEDC6D00FD2950 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CCD1F1CAEDC6D00FD2950 /* ChildViewController.swift */; };
+		95754C8E1CD082BA00E06D82 /* Bluetonium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95754C8D1CD082BA00E06D82 /* Bluetonium.framework */; };
+		95754C901CD0894C00E06D82 /* BLECentralPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 95754C8F1CD0894C00E06D82 /* BLECentralPlugin.m */; };
+		95754C921CD089D200E06D82 /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 95754C911CD089D200E06D82 /* BLECommandContext.m */; };
+		95754C941CD089DA00E06D82 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95754C931CD089DA00E06D82 /* CBPeripheral+Extensions.m */; };
+		95ECF5741CB0507400A61A07 /* dataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECF5731CB0507400A61A07 /* dataEntry.swift */; };
+		95ECF5761CB053F600A61A07 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECF5751CB053F600A61A07 /* DataService.swift */; };
+		95ECF5781CB05EAA00A61A07 /* FBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECF5771CB05EAA00A61A07 /* FBService.swift */; };
+		95FDE81C1CCEA39900F9073D /* ALCameraViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FDE81B1CCEA39900F9073D /* ALCameraViewController.framework */; };
+		95FDE81E1CCEA3A400F9073D /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FDE81D1CCEA3A400F9073D /* PagingMenuController.framework */; };
+		B0F5DCAF7D676D2E1ED5D699 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71D859461B2D0A01EE0A48E /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9500C1011CADFDBD002C1BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9500C0E11CADFDBC002C1BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9500C0E81CADFDBC002C1BB7;
+			remoteInfo = MOswift;
+		};
+		9500C10C1CADFDBD002C1BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9500C0E11CADFDBC002C1BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9500C0E81CADFDBC002C1BB7;
+			remoteInfo = MOswift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E88A5A3D0E7113C51CFDF6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5383C303A70CAD29B1035EAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9500C0E91CADFDBC002C1BB7 /* MOswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9500C0EC1CADFDBC002C1BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9500C0EE1CADFDBC002C1BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9500C0F11CADFDBC002C1BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9500C0F41CADFDBD002C1BB7 /* MOswift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MOswift.xcdatamodel; sourceTree = "<group>"; };
+		9500C0F61CADFDBD002C1BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9500C0F91CADFDBD002C1BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9500C0FB1CADFDBD002C1BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9500C1001CADFDBD002C1BB7 /* MOswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9500C1041CADFDBD002C1BB7 /* MOswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOswiftTests.swift; sourceTree = "<group>"; };
+		9500C1061CADFDBD002C1BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9500C10B1CADFDBD002C1BB7 /* MOswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9500C10F1CADFDBD002C1BB7 /* MOswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOswiftUITests.swift; sourceTree = "<group>"; };
+		9500C1111CADFDBD002C1BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9500C11E1CADFF76002C1BB7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		9500C1211CAE0215002C1BB7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		9500C1231CAE0AB3002C1BB7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9500C1251CAE125E002C1BB7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		9500C1271CAE1271002C1BB7 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		9500C1281CAE1271002C1BB7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		9500C12B1CAE4C42002C1BB7 /* BLEDiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDiscoverView.swift; sourceTree = "<group>"; };
+		9500C12F1CAE4EDA002C1BB7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		95165F2A1CAE7878001F3B27 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
+		95209AFE1CAEE9500088F6CC /* DetailedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedListViewController.swift; sourceTree = "<group>"; };
+		952F4B841CB44E2D001C2D0C /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/Cordova.framework"; sourceTree = "<group>"; };
+		953220B61CCF7ADB0053E886 /* cordova_plugin_camera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_camera.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_camera.framework"; sourceTree = "<group>"; };
+		953220B71CCF7ADB0053E886 /* cordova_plugin_contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_contacts.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_contacts.framework"; sourceTree = "<group>"; };
+		953220B81CCF7ADB0053E886 /* cordova_plugin_device_motion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_device_motion.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_device_motion.framework"; sourceTree = "<group>"; };
+		953220B91CCF7ADB0053E886 /* cordova_plugin_device_orientation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_device_orientation.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_device_orientation.framework"; sourceTree = "<group>"; };
+		953220BA1CCF7ADB0053E886 /* cordova_plugin_device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_device.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_device.framework"; sourceTree = "<group>"; };
+		953220BB1CCF7ADB0053E886 /* cordova_plugin_file_transfer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_file_transfer.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_file_transfer.framework"; sourceTree = "<group>"; };
+		953220BC1CCF7ADB0053E886 /* cordova_plugin_file.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_file.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_file.framework"; sourceTree = "<group>"; };
+		953220BD1CCF7ADB0053E886 /* cordova_plugin_geolocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_geolocation.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_geolocation.framework"; sourceTree = "<group>"; };
+		953220BE1CCF7ADB0053E886 /* cordova_plugin_globalization.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_globalization.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_globalization.framework"; sourceTree = "<group>"; };
+		953220BF1CCF7ADB0053E886 /* cordova_plugin_inappbrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_inappbrowser.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_inappbrowser.framework"; sourceTree = "<group>"; };
+		953220C01CCF7ADB0053E886 /* cordova_plugin_media_capture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_media_capture.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_media_capture.framework"; sourceTree = "<group>"; };
+		953220C11CCF7ADB0053E886 /* cordova_plugin_network_information.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_network_information.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_network_information.framework"; sourceTree = "<group>"; };
+		953220C21CCF7ADB0053E886 /* cordova_plugin_splashscreen.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_splashscreen.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_splashscreen.framework"; sourceTree = "<group>"; };
+		953220C31CCF7ADB0053E886 /* cordova_plugin_statusbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_statusbar.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_statusbar.framework"; sourceTree = "<group>"; };
+		953220C41CCF7ADB0053E886 /* cordova_plugin_vibration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_vibration.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_vibration.framework"; sourceTree = "<group>"; };
+		953220C51CCF7ADB0053E886 /* cordova_plugin_wkwebview_engine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cordova_plugin_wkwebview_engine.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/cordova_plugin_wkwebview_engine.framework"; sourceTree = "<group>"; };
+		953220C61CCF7ADB0053E886 /* CordovaPlugin_console.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CordovaPlugin_console.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/CordovaPlugin_console.framework"; sourceTree = "<group>"; };
+		953220C71CCF7ADB0053E886 /* Pods_MOswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MOswift.framework; path = "Pods/../build/Debug-iphoneos/Pods_MOswift.framework"; sourceTree = "<group>"; };
+		953220C81CCF7ADB0053E886 /* Pods_MOswiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MOswiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_MOswiftTests.framework"; sourceTree = "<group>"; };
+		953220C91CCF7ADB0053E886 /* Pods_MOswiftUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MOswiftUITests.framework; path = "Pods/../build/Debug-iphoneos/Pods_MOswiftUITests.framework"; sourceTree = "<group>"; };
+		9551C52C1CBD44CA009EB84A /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
+		9551C52E1CBD44DD009EB84A /* ImageInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInputViewController.swift; sourceTree = "<group>"; };
+		9551C5301CBD44EB009EB84A /* VoiceInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceInputViewController.swift; sourceTree = "<group>"; };
+		9551C5321CBD465F009EB84A /* CameraInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraInputViewController.swift; sourceTree = "<group>"; };
+		9551C5341CBD4809009EB84A /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+		955CCD131CAED5CC00FD2950 /* HisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HisViewController.swift; sourceTree = "<group>"; };
+		955CCD151CAED5F200FD2950 /* Hakuba.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hakuba.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphoneos/Hakuba.framework"; sourceTree = "<group>"; };
+		955CCD171CAED6A600FD2950 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = "../../../../Downloads/Hakuba-master/Example/Example/CustomCell.swift"; sourceTree = "<group>"; };
+		955CCD181CAED6A600FD2950 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = "../../../../Downloads/Hakuba-master/Example/Example/CustomCell.xib"; sourceTree = "<group>"; };
+		955CCD191CAED6A600FD2950 /* CustomCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCellModel.swift; path = "../../../../Downloads/Hakuba-master/Example/Example/CustomCellModel.swift"; sourceTree = "<group>"; };
+		955CCD1D1CAED7F100FD2950 /* ListHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeaderViewController.swift; sourceTree = "<group>"; };
+		955CCD1F1CAEDC6D00FD2950 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		95754C8D1CD082BA00E06D82 /* Bluetonium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bluetonium.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphoneos/Bluetonium.framework"; sourceTree = "<group>"; };
+		95754C8F1CD0894C00E06D82 /* BLECentralPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BLECentralPlugin.m; path = "Pods/phonegap-ios-template/resources/www/plugins/cordova-plugin-ble-central/BLECentralPlugin/BLECentralPlugin.m"; sourceTree = "<group>"; };
+		95754C911CD089D200E06D82 /* BLECommandContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BLECommandContext.m; path = "Pods/phonegap-ios-template/resources/www/plugins/cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.m"; sourceTree = "<group>"; };
+		95754C931CD089DA00E06D82 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "Pods/phonegap-ios-template/resources/www/plugins/cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.m"; sourceTree = "<group>"; };
+		959B88C71CD0A81E007D4610 /* bridge-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridge-header.h"; sourceTree = "<group>"; };
+		95ECF5731CB0507400A61A07 /* dataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataEntry.swift; sourceTree = "<group>"; };
+		95ECF5751CB053F600A61A07 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		95ECF5771CB05EAA00A61A07 /* FBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBService.swift; sourceTree = "<group>"; };
+		95FDE81B1CCEA39900F9073D /* ALCameraViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ALCameraViewController.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/ALCameraViewController.framework"; sourceTree = "<group>"; };
+		95FDE81D1CCEA3A400F9073D /* PagingMenuController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PagingMenuController.framework; path = "../../../Library/Developer/Xcode/DerivedData/MOswift-ghbvgrjhnimtfjdallfqltxbpzyz/Build/Products/Debug-iphonesimulator/PagingMenuController.framework"; sourceTree = "<group>"; };
+		E71D859461B2D0A01EE0A48E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9500C0E61CADFDBC002C1BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95754C8E1CD082BA00E06D82 /* Bluetonium.framework in Frameworks */,
+				953220CA1CCF7ADB0053E886 /* cordova_plugin_camera.framework in Frameworks */,
+				953220CB1CCF7ADB0053E886 /* cordova_plugin_contacts.framework in Frameworks */,
+				953220CC1CCF7ADB0053E886 /* cordova_plugin_device_motion.framework in Frameworks */,
+				953220CD1CCF7ADB0053E886 /* cordova_plugin_device_orientation.framework in Frameworks */,
+				953220CE1CCF7ADB0053E886 /* cordova_plugin_device.framework in Frameworks */,
+				953220CF1CCF7ADB0053E886 /* cordova_plugin_file_transfer.framework in Frameworks */,
+				953220D01CCF7ADB0053E886 /* cordova_plugin_file.framework in Frameworks */,
+				953220D11CCF7ADB0053E886 /* cordova_plugin_geolocation.framework in Frameworks */,
+				953220D21CCF7ADB0053E886 /* cordova_plugin_globalization.framework in Frameworks */,
+				953220D31CCF7ADB0053E886 /* cordova_plugin_inappbrowser.framework in Frameworks */,
+				953220D41CCF7ADB0053E886 /* cordova_plugin_media_capture.framework in Frameworks */,
+				953220D51CCF7ADB0053E886 /* cordova_plugin_network_information.framework in Frameworks */,
+				953220D61CCF7ADB0053E886 /* cordova_plugin_splashscreen.framework in Frameworks */,
+				953220D71CCF7ADB0053E886 /* cordova_plugin_statusbar.framework in Frameworks */,
+				953220D81CCF7ADB0053E886 /* cordova_plugin_vibration.framework in Frameworks */,
+				953220D91CCF7ADB0053E886 /* cordova_plugin_wkwebview_engine.framework in Frameworks */,
+				953220DA1CCF7ADB0053E886 /* CordovaPlugin_console.framework in Frameworks */,
+				953220DB1CCF7ADB0053E886 /* Pods_MOswift.framework in Frameworks */,
+				953220DC1CCF7ADB0053E886 /* Pods_MOswiftTests.framework in Frameworks */,
+				953220DD1CCF7ADB0053E886 /* Pods_MOswiftUITests.framework in Frameworks */,
+				953220B51CCF7ADB0053E886 /* Cordova.framework in Frameworks */,
+				95FDE81E1CCEA3A400F9073D /* PagingMenuController.framework in Frameworks */,
+				95FDE81C1CCEA39900F9073D /* ALCameraViewController.framework in Frameworks */,
+				955CCD161CAED5F200FD2950 /* Hakuba.framework in Frameworks */,
+				95165F2B1CAE7878001F3B27 /* Firebase.framework in Frameworks */,
+				9500C1301CAE4EDA002C1BB7 /* CoreBluetooth.framework in Frameworks */,
+				9500C1291CAE1271002C1BB7 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				9500C1261CAE125E002C1BB7 /* Bolts.framework in Frameworks */,
+				9500C12A1CAE1271002C1BB7 /* FBSDKShareKit.framework in Frameworks */,
+				9500C1221CAE0215002C1BB7 /* FBSDKLoginKit.framework in Frameworks */,
+				9500C11F1CADFF76002C1BB7 /* FBSDKCoreKit.framework in Frameworks */,
+				B0F5DCAF7D676D2E1ED5D699 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C0FD1CADFDBD002C1BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C1081CADFDBD002C1BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711BEFD31EE05B03E5D4A2C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5383C303A70CAD29B1035EAC /* Pods.debug.xcconfig */,
+				3E88A5A3D0E7113C51CFDF6E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9500C0E01CADFDBC002C1BB7 = {
+			isa = PBXGroup;
+			children = (
+				959B88C71CD0A81E007D4610 /* bridge-header.h */,
+				95754C931CD089DA00E06D82 /* CBPeripheral+Extensions.m */,
+				95754C911CD089D200E06D82 /* BLECommandContext.m */,
+				95754C8F1CD0894C00E06D82 /* BLECentralPlugin.m */,
+				9500C11D1CADFF3E002C1BB7 /* Frameworks */,
+				9500C0EB1CADFDBC002C1BB7 /* MOswift */,
+				9500C1031CADFDBD002C1BB7 /* MOswiftTests */,
+				9500C10E1CADFDBD002C1BB7 /* MOswiftUITests */,
+				9500C0EA1CADFDBC002C1BB7 /* Products */,
+				711BEFD31EE05B03E5D4A2C3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9500C0EA1CADFDBC002C1BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9500C0E91CADFDBC002C1BB7 /* MOswift.app */,
+				9500C1001CADFDBD002C1BB7 /* MOswiftTests.xctest */,
+				9500C10B1CADFDBD002C1BB7 /* MOswiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9500C0EB1CADFDBC002C1BB7 /* MOswift */ = {
+			isa = PBXGroup;
+			children = (
+				9500C12B1CAE4C42002C1BB7 /* BLEDiscoverView.swift */,
+				9500C0EC1CADFDBC002C1BB7 /* AppDelegate.swift */,
+				9500C0EE1CADFDBC002C1BB7 /* ViewController.swift */,
+				9500C1231CAE0AB3002C1BB7 /* MainViewController.swift */,
+				9500C0F01CADFDBC002C1BB7 /* Main.storyboard */,
+				95ECF5731CB0507400A61A07 /* dataEntry.swift */,
+				95ECF5771CB05EAA00A61A07 /* FBService.swift */,
+				95ECF5751CB053F600A61A07 /* DataService.swift */,
+				95209AFE1CAEE9500088F6CC /* DetailedListViewController.swift */,
+				955CCD1F1CAEDC6D00FD2950 /* ChildViewController.swift */,
+				955CCD1D1CAED7F100FD2950 /* ListHeaderViewController.swift */,
+				955CCD131CAED5CC00FD2950 /* HisViewController.swift */,
+				955CCD171CAED6A600FD2950 /* CustomCell.swift */,
+				955CCD181CAED6A600FD2950 /* CustomCell.xib */,
+				955CCD191CAED6A600FD2950 /* CustomCellModel.swift */,
+				9500C0F61CADFDBD002C1BB7 /* Assets.xcassets */,
+				9500C0F81CADFDBD002C1BB7 /* LaunchScreen.storyboard */,
+				9500C0FB1CADFDBD002C1BB7 /* Info.plist */,
+				9500C0F31CADFDBD002C1BB7 /* MOswift.xcdatamodeld */,
+				9551C5341CBD4809009EB84A /* AddEntryViewController.swift */,
+				9551C52C1CBD44CA009EB84A /* TextInputViewController.swift */,
+				9551C52E1CBD44DD009EB84A /* ImageInputViewController.swift */,
+				9551C5321CBD465F009EB84A /* CameraInputViewController.swift */,
+				9551C5301CBD44EB009EB84A /* VoiceInputViewController.swift */,
+			);
+			path = MOswift;
+			sourceTree = "<group>";
+		};
+		9500C1031CADFDBD002C1BB7 /* MOswiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9500C1041CADFDBD002C1BB7 /* MOswiftTests.swift */,
+				9500C1061CADFDBD002C1BB7 /* Info.plist */,
+			);
+			path = MOswiftTests;
+			sourceTree = "<group>";
+		};
+		9500C10E1CADFDBD002C1BB7 /* MOswiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9500C10F1CADFDBD002C1BB7 /* MOswiftUITests.swift */,
+				9500C1111CADFDBD002C1BB7 /* Info.plist */,
+			);
+			path = MOswiftUITests;
+			sourceTree = "<group>";
+		};
+		9500C11D1CADFF3E002C1BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95754C8D1CD082BA00E06D82 /* Bluetonium.framework */,
+				953220B61CCF7ADB0053E886 /* cordova_plugin_camera.framework */,
+				953220B71CCF7ADB0053E886 /* cordova_plugin_contacts.framework */,
+				953220B81CCF7ADB0053E886 /* cordova_plugin_device_motion.framework */,
+				953220B91CCF7ADB0053E886 /* cordova_plugin_device_orientation.framework */,
+				953220BA1CCF7ADB0053E886 /* cordova_plugin_device.framework */,
+				953220BB1CCF7ADB0053E886 /* cordova_plugin_file_transfer.framework */,
+				953220BC1CCF7ADB0053E886 /* cordova_plugin_file.framework */,
+				953220BD1CCF7ADB0053E886 /* cordova_plugin_geolocation.framework */,
+				953220BE1CCF7ADB0053E886 /* cordova_plugin_globalization.framework */,
+				953220BF1CCF7ADB0053E886 /* cordova_plugin_inappbrowser.framework */,
+				953220C01CCF7ADB0053E886 /* cordova_plugin_media_capture.framework */,
+				953220C11CCF7ADB0053E886 /* cordova_plugin_network_information.framework */,
+				953220C21CCF7ADB0053E886 /* cordova_plugin_splashscreen.framework */,
+				953220C31CCF7ADB0053E886 /* cordova_plugin_statusbar.framework */,
+				953220C41CCF7ADB0053E886 /* cordova_plugin_vibration.framework */,
+				953220C51CCF7ADB0053E886 /* cordova_plugin_wkwebview_engine.framework */,
+				953220C61CCF7ADB0053E886 /* CordovaPlugin_console.framework */,
+				953220C71CCF7ADB0053E886 /* Pods_MOswift.framework */,
+				953220C81CCF7ADB0053E886 /* Pods_MOswiftTests.framework */,
+				953220C91CCF7ADB0053E886 /* Pods_MOswiftUITests.framework */,
+				95FDE81D1CCEA3A400F9073D /* PagingMenuController.framework */,
+				95FDE81B1CCEA39900F9073D /* ALCameraViewController.framework */,
+				952F4B841CB44E2D001C2D0C /* Cordova.framework */,
+				955CCD151CAED5F200FD2950 /* Hakuba.framework */,
+				95165F2A1CAE7878001F3B27 /* Firebase.framework */,
+				9500C12F1CAE4EDA002C1BB7 /* CoreBluetooth.framework */,
+				9500C1271CAE1271002C1BB7 /* FBSDKMessengerShareKit.framework */,
+				9500C1281CAE1271002C1BB7 /* FBSDKShareKit.framework */,
+				9500C1251CAE125E002C1BB7 /* Bolts.framework */,
+				9500C1211CAE0215002C1BB7 /* FBSDKLoginKit.framework */,
+				9500C11E1CADFF76002C1BB7 /* FBSDKCoreKit.framework */,
+				E71D859461B2D0A01EE0A48E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		955301B31CD0996200995985 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9500C0E81CADFDBC002C1BB7 /* MOswift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9500C1141CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswift" */;
+			buildPhases = (
+				FB62CF828914C8E4B125A5B5 /* Check Pods Manifest.lock */,
+				9500C0E51CADFDBC002C1BB7 /* Sources */,
+				9500C0E61CADFDBC002C1BB7 /* Frameworks */,
+				9500C0E71CADFDBC002C1BB7 /* Resources */,
+				126D8A31DEFEBF4A68AE6A39 /* Embed Pods Frameworks */,
+				814A4990C0B05EDAC22FF409 /* Copy Pods Resources */,
+				955301B31CD0996200995985 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOswift;
+			productName = MOswift;
+			productReference = 9500C0E91CADFDBC002C1BB7 /* MOswift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9500C0FF1CADFDBD002C1BB7 /* MOswiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9500C1171CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswiftTests" */;
+			buildPhases = (
+				9500C0FC1CADFDBD002C1BB7 /* Sources */,
+				9500C0FD1CADFDBD002C1BB7 /* Frameworks */,
+				9500C0FE1CADFDBD002C1BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9500C1021CADFDBD002C1BB7 /* PBXTargetDependency */,
+			);
+			name = MOswiftTests;
+			productName = MOswiftTests;
+			productReference = 9500C1001CADFDBD002C1BB7 /* MOswiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9500C10A1CADFDBD002C1BB7 /* MOswiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9500C11A1CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswiftUITests" */;
+			buildPhases = (
+				9500C1071CADFDBD002C1BB7 /* Sources */,
+				9500C1081CADFDBD002C1BB7 /* Frameworks */,
+				9500C1091CADFDBD002C1BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9500C10D1CADFDBD002C1BB7 /* PBXTargetDependency */,
+			);
+			name = MOswiftUITests;
+			productName = MOswiftUITests;
+			productReference = 9500C10B1CADFDBD002C1BB7 /* MOswiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9500C0E11CADFDBC002C1BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Chong Guo";
+				TargetAttributes = {
+					9500C0E81CADFDBC002C1BB7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					9500C0FF1CADFDBD002C1BB7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 9500C0E81CADFDBC002C1BB7;
+					};
+					9500C10A1CADFDBD002C1BB7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 9500C0E81CADFDBC002C1BB7;
+					};
+				};
+			};
+			buildConfigurationList = 9500C0E41CADFDBC002C1BB7 /* Build configuration list for PBXProject "MOswift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9500C0E01CADFDBC002C1BB7;
+			productRefGroup = 9500C0EA1CADFDBC002C1BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9500C0E81CADFDBC002C1BB7 /* MOswift */,
+				9500C0FF1CADFDBD002C1BB7 /* MOswiftTests */,
+				9500C10A1CADFDBD002C1BB7 /* MOswiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9500C0E71CADFDBC002C1BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9500C0FA1CADFDBD002C1BB7 /* LaunchScreen.storyboard in Resources */,
+				9500C0F71CADFDBD002C1BB7 /* Assets.xcassets in Resources */,
+				955CCD1B1CAED6A600FD2950 /* CustomCell.xib in Resources */,
+				9500C0F21CADFDBC002C1BB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C0FE1CADFDBD002C1BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C1091CADFDBD002C1BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126D8A31DEFEBF4A68AE6A39 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		814A4990C0B05EDAC22FF409 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB62CF828914C8E4B125A5B5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9500C0E51CADFDBC002C1BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95754C901CD0894C00E06D82 /* BLECentralPlugin.m in Sources */,
+				95754C921CD089D200E06D82 /* BLECommandContext.m in Sources */,
+				95754C941CD089DA00E06D82 /* CBPeripheral+Extensions.m in Sources */,
+				955CCD141CAED5CC00FD2950 /* HisViewController.swift in Sources */,
+				95ECF5761CB053F600A61A07 /* DataService.swift in Sources */,
+				955CCD1A1CAED6A600FD2950 /* CustomCell.swift in Sources */,
+				95ECF5781CB05EAA00A61A07 /* FBService.swift in Sources */,
+				9551C52D1CBD44CA009EB84A /* TextInputViewController.swift in Sources */,
+				9500C12C1CAE4C42002C1BB7 /* BLEDiscoverView.swift in Sources */,
+				955CCD201CAEDC6D00FD2950 /* ChildViewController.swift in Sources */,
+				9500C0F51CADFDBD002C1BB7 /* MOswift.xcdatamodeld in Sources */,
+				9551C5331CBD465F009EB84A /* CameraInputViewController.swift in Sources */,
+				9500C0EF1CADFDBC002C1BB7 /* ViewController.swift in Sources */,
+				9500C0ED1CADFDBC002C1BB7 /* AppDelegate.swift in Sources */,
+				955CCD1C1CAED6A600FD2950 /* CustomCellModel.swift in Sources */,
+				9551C52F1CBD44DD009EB84A /* ImageInputViewController.swift in Sources */,
+				955CCD1E1CAED7F100FD2950 /* ListHeaderViewController.swift in Sources */,
+				95209B001CAEE9500088F6CC /* DetailedListViewController.swift in Sources */,
+				9551C5351CBD4809009EB84A /* AddEntryViewController.swift in Sources */,
+				9551C5311CBD44EB009EB84A /* VoiceInputViewController.swift in Sources */,
+				95ECF5741CB0507400A61A07 /* dataEntry.swift in Sources */,
+				9500C1241CAE0AB3002C1BB7 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C0FC1CADFDBD002C1BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9500C1051CADFDBD002C1BB7 /* MOswiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500C1071CADFDBD002C1BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9500C1101CADFDBD002C1BB7 /* MOswiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9500C1021CADFDBD002C1BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9500C0E81CADFDBC002C1BB7 /* MOswift */;
+			targetProxy = 9500C1011CADFDBD002C1BB7 /* PBXContainerItemProxy */;
+		};
+		9500C10D1CADFDBD002C1BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9500C0E81CADFDBC002C1BB7 /* MOswift */;
+			targetProxy = 9500C10C1CADFDBD002C1BB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9500C0F01CADFDBC002C1BB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9500C0F11CADFDBC002C1BB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9500C0F81CADFDBD002C1BB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9500C0F91CADFDBD002C1BB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9500C1121CADFDBD002C1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "bridge-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9500C1131CADFDBD002C1BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "bridge-header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9500C1151CADFDBD002C1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5383C303A70CAD29B1035EAC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/cguo/Documents/FacebookSDK;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"${PODS_ROOT}/Headers/Public/phonegap-ios-template",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+				);
+				INFOPLIST_FILE = MOswift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridge-header.h";
+				USER_HEADER_SEARCH_PATHS = "";
+				USE_HEADERMAP = YES;
+			};
+			name = Debug;
+		};
+		9500C1161CADFDBD002C1BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E88A5A3D0E7113C51CFDF6E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/cguo/Documents/FacebookSDK;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"${PODS_ROOT}/Headers/Public/phonegap-ios-template",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+				);
+				INFOPLIST_FILE = MOswift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridge-header.h";
+				USER_HEADER_SEARCH_PATHS = "";
+				USE_HEADERMAP = YES;
+			};
+			name = Release;
+		};
+		9500C1181CADFDBD002C1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MOswiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOswift.app/MOswift";
+			};
+			name = Debug;
+		};
+		9500C1191CADFDBD002C1BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MOswiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOswift.app/MOswift";
+			};
+			name = Release;
+		};
+		9500C11B1CADFDBD002C1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MOswiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MOswift;
+			};
+			name = Debug;
+		};
+		9500C11C1CADFDBD002C1BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MOswiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cguodesign.com.MOswiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MOswift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9500C0E41CADFDBC002C1BB7 /* Build configuration list for PBXProject "MOswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9500C1121CADFDBD002C1BB7 /* Debug */,
+				9500C1131CADFDBD002C1BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9500C1141CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9500C1151CADFDBD002C1BB7 /* Debug */,
+				9500C1161CADFDBD002C1BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9500C1171CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9500C1181CADFDBD002C1BB7 /* Debug */,
+				9500C1191CADFDBD002C1BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9500C11A1CADFDBD002C1BB7 /* Build configuration list for PBXNativeTarget "MOswiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9500C11B1CADFDBD002C1BB7 /* Debug */,
+				9500C11C1CADFDBD002C1BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9500C0F31CADFDBD002C1BB7 /* MOswift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9500C0F41CADFDBD002C1BB7 /* MOswift.xcdatamodel */,
+			);
+			currentVersion = 9500C0F41CADFDBD002C1BB7 /* MOswift.xcdatamodel */;
+			path = MOswift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9500C0E11CADFDBC002C1BB7 /* Project object */;
+}
