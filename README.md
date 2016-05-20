@@ -1,9 +1,10 @@
 # Memory Objects
 
 ## Description
-Testing Code for Master Project - Memory Objects
+Code files and design files for Chong's MS project at Georgia Tech.
 
-## Structures:
+The project explores using daily objects as evocative objects. To archive that, I design a wearable device that reads RFID tags, and coded a application that records/replays memory pieces, such as text, photos, and voices. 
 
-### Arduino
-### App
+###This is project includes
+####A Arduino based device
+####A Mobile App(iOS) that connects to a online database (Firebase)
